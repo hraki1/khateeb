@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h1>Welcome</h1>
+    <p>Please enter your Name:</p>
+    <form name="NameForm" id="NameForm" method="post">
+        First Name:
+        <br />
+        <input name="FirstName" type="text" class="form-control input-lg" autofocus required />
+        <br />
+        Last Name:
+        <br />
+        <input name="LastName" type="text" class="form-control input-lg" required />
+        <br />
+        <input id="SaveButton" type="submit" value="Save" class="btn btn-info" />
+    </form>
+</div>
